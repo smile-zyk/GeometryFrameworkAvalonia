@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33516.290
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeometryFrameworkAvalonia", "GeometryFrameworkAvalonia\GeometryFrameworkAvalonia.csproj", "{A9492CCE-1D8E-465A-9ABE-49DBD9A964E7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RenderCore", "RenderCore\RenderCore.csproj", "{7245E6BF-3EA6-4C40-B0BA-F567B28F56A1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "geometry3Sharp", "geometry3Sharp\geometry3Sharp.csproj", "{0C518DDA-28FE-44CA-9AB0-F9773974F13A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A9492CCE-1D8E-465A-9ABE-49DBD9A964E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9492CCE-1D8E-465A-9ABE-49DBD9A964E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9492CCE-1D8E-465A-9ABE-49DBD9A964E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9492CCE-1D8E-465A-9ABE-49DBD9A964E7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7245E6BF-3EA6-4C40-B0BA-F567B28F56A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7245E6BF-3EA6-4C40-B0BA-F567B28F56A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7245E6BF-3EA6-4C40-B0BA-F567B28F56A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7245E6BF-3EA6-4C40-B0BA-F567B28F56A1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0C518DDA-28FE-44CA-9AB0-F9773974F13A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C518DDA-28FE-44CA-9AB0-F9773974F13A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C518DDA-28FE-44CA-9AB0-F9773974F13A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C518DDA-28FE-44CA-9AB0-F9773974F13A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AF6925BA-E2D0-4E0A-9AEC-51983F733F72}
+	EndGlobalSection
+EndGlobal

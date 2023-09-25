@@ -1,0 +1,9 @@
+<prism:PrismApplication xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:prism="http://prismlibrary.com/"
+             x:Class="GeometryFrameworkAvalonia.App">
+
+    <Application.Styles>
+        <FluentTheme Mode="Light"/>
+    </Application.Styles>
+</prism:PrismApplication>

@@ -1,0 +1,38 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <BuiltInComInteropSupport>true</BuiltInComInteropSupport>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Models\" />
+    <AvaloniaResource Include="Assets\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <TrimmerRootAssembly Include="Avalonia.Themes.Fluent" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Avalonia" Version="0.10.21" />
+    <PackageReference Include="Avalonia.Desktop" Version="0.10.21" />
+    <!--Condition below is needed to remove Avalonia.Diagnostics package from build output in Release configuration.-->
+    <PackageReference Condition="'$(Configuration)' == 'Debug'" Include="Avalonia.Diagnostics" Version="0.10.21" />
+    <PackageReference Include="CommunityToolkit.Mvvm" Version="8.2.1" />
+    <PackageReference Include="Kitware.AvaloniaControls" Version="9.2.2023.328" />
+    <PackageReference Include="Prism.Avalonia" Version="8.1.97.1021" />
+    <PackageReference Include="Prism.DryIoc.Avalonia" Version="8.1.97.1021" />
+    <PackageReference Include="XamlNameReferenceGenerator" Version="1.6.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="ViewModels\ViewModelBase.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\RenderCore\RenderCore.csproj" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,34 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Avalonia" Version="0.10.21" />
+      <PackageReference Include="Avalonia.Desktop" Version="0.10.21" />
+      <PackageReference Include="CommunityToolkit.Mvvm" Version="8.2.1" />
+      <PackageReference Include="Kitware.AvaloniaControls" Version="9.2.2023.328" />
+      <PackageReference Include="Prism.Avalonia" Version="8.1.97.1021" />
+      <PackageReference Include="Prism.DryIoc.Avalonia" Version="8.1.97.1021" />
+      <PackageReference Include="XamlNameReferenceGenerator" Version="1.6.1" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Models\" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Update="Views\RenderControl.axaml.cs">
+        <DependentUpon>RenderControl.axaml</DependentUpon>
+        <SubType>Code</SubType>
+      </Compile>
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\geometry3Sharp\geometry3Sharp.csproj" />
+    </ItemGroup>
+
+</Project>
